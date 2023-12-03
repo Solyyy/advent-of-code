@@ -16,15 +16,30 @@ class AlgorithmDay1Test {
         File file = new File(getClass().getClassLoader().getResource("day1/example.txt").getPath());
         String input = readFile(file);
 
-        int output = new AlgorithmDay1().execute(input);
+        int output = new AlgorithmDay1().part_1(input);
 
-        assertEquals(0, output);
-
+        assertEquals(142, output);
 
     }
 
     @Test
     void part1() {
+        File file = new File(getClass().getClassLoader().getResource("day1/input.txt").getPath());
+        String input = readFile(file);
+
+        int output = new AlgorithmDay1().part_1(input);
+
+        assertEquals(55834, output);
+
+    }
+    @Test
+    void part2_example() {
+        File file = new File(getClass().getClassLoader().getResource("day1/example2.txt").getPath());
+        String input = readFile(file);
+
+        int output = new AlgorithmDay1().part_2(input);
+
+        assertEquals(0, output);
 
     }
 
